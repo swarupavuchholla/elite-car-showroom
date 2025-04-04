@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Car Showroom</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('car-showroom-bg.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    .section {
+      padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 20px;
+      border-radius: 10px;
+    }
+    .video-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .video-container video {
+      max-width: 90%;
+      border: 2px solid #fff;
+      border-radius: 10px;
+    }
+    .btn {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+    input[type="text"],
+    input[type="email"] {
+      padding: 10px;
+      width: 80%;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Elite Car Showroom</h1>
+    <p>Your Destination for Luxury and Performance Vehicles</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#models">Our Models</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="section" id="home">
+    <h2>Welcome to Elite Car Showroom</h2>
+    <p>Discover the latest and most luxurious car models from top global brands. Experience unmatched performance, comfort, and style.</p>
+    <button class="btn" onclick="exploreInventory()">Explore Inventory</button>
+  </div>
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>Elite Car Showroom has been delivering exceptional vehicles and customer service for over a decade. We offer a premium selection of cars tailored to every lifestyle.</p>
+  </div>
+  <div class="section" id="models">
+    <h2>Our Models</h2>
+    <p>From sleek sports cars to spacious SUVs, we have a wide range of models to suit your needs.</p>
+    <div class="video-container">
+      <video controls>
+        <source src="car-showroom-tour.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <button class="btn">View All Models</button>
+  </div>
+  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required /><br />
+      <input type="email" placeholder="Your Email" required /><br />
+      <input type="text" placeholder="Interested Car Model or Message" required /><br />
+      <button class="btn" type="submit">Send Inquiry</button>
+    </form>
+  </div>
+  <footer>
+    <p>&copy; 2025 Elite Car Showroom | Excellence in Motion | Swarupa Vuchholla - 11820539</p>
+  </footer>
+  <script>
+    function exploreInventory() {
+      alert("Redirecting to inventory page...");
+    }
+  </script>
+</body>
+</html>
